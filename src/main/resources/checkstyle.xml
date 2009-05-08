@@ -95,7 +95,7 @@ Checkstyle rules for REX-2009.
 			<property name="countEmpty" value="false" />
 		</module>
 		<module name="ParameterNumber">
-			<property name="max" value="7" />
+			<property name="max" value="20" />
 		</module>
 
 		<!-- Checks for whitespace                               -->
