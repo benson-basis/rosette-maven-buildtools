@@ -1,15 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
-        <groupId>com.basistech</groupId>
-        <artifactId>rlpj</artifactId>
+        <groupId>com.basistech.rlp</groupId>
+        <artifactId>rlp</artifactId>
         <version>0.8-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.basistech.rlpj</groupId>
+    <groupId>com.basistech.rlp</groupId>
     <artifactId>buildtools</artifactId>
     <version>0.8-SNAPSHOT</version>
-    <name>RLPJ Buildtools</name>
+    <name>RLP in 100% Java Buildtools</name>
     <packaging>jar</packaging>
     <url>${url.base}/buildtools</url>
 
