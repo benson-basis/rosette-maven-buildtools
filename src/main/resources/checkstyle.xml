@@ -111,7 +111,8 @@ Checkstyle rules for REX-2009.
         </module>
         <module name="IllegalType">
             <property name="format" value="^xxx$"/>
-            <property name="illegalClassNames" value="java.util.GregorianCalendar, java.util.Hashtable, java.util.HashSet, java.util.HashMap, java.util.ArrayList, java.util.LinkedList, java.util.LinkedHashMap, java.util.LinkedHashSet, java.util.TreeSet, java.util.TreeMap"/>
+            <property name="illegalClassNames" value="java.util.GregorianCalendar, java.util.Hashtable, java.util.HashSet, java.util.HashMap, java.util.ArrayList, java.util.LinkedHashMap, java.util.LinkedHashSet, java.util.TreeSet, java.util.TreeMap"/>
+            <property name="tokens" value="VARIABLE_DEF"/>
         </module>
         <module name="DeclarationOrder"/>
         <module name="ExplicitInitialization"/>

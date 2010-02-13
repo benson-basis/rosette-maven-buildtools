@@ -3,7 +3,6 @@
     <description>PMD Plugin preferences rule set</description>
 
     <rule ref="rulesets/basic.xml/BooleanInstantiation"/>
-    <rule ref="rulesets/basic.xml/CollapsibleIfStatements"/>
     <rule ref="rulesets/basic.xml/DoubleCheckedLocking"/>
     <rule ref="rulesets/basic.xml/EmptyStatementNotInLoop"/>
     <rule ref="rulesets/basic.xml/ForLoopShouldBeWhileLoop"/>
