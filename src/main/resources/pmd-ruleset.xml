@@ -20,7 +20,6 @@
     <rule ref="rulesets/design.xml/PositionLiteralsFirstInComparisons"/>
     <rule ref="rulesets/design.xml/SimplifyBooleanExpressions"/>
     <rule ref="rulesets/design.xml/SimplifyBooleanReturns"/>
-    <rule ref="rulesets/design.xml/SimplifyConditional"/>
     <rule ref="rulesets/design.xml/UnnecessaryLocalBeforeReturn"/>
     <rule ref="rulesets/logging-java.xml/LoggerIsNotStaticFinal"/>
     <rule ref="rulesets/unusedcode.xml/UnusedLocalVariable"/>
