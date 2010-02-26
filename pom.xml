@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.basistech</groupId>
     <artifactId>buildtools</artifactId>
-    <version>3-SNAPSHOT</version>
+    <version>2-SNAPSHOT</version>
     <name>Configuration files for checkstyle and PMD</name>
     <packaging>jar</packaging>
 
