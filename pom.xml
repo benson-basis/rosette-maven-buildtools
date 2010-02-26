@@ -6,6 +6,19 @@
     <version>2-SNAPSHOT</version>
     <name>Configuration files for checkstyle and PMD</name>
     <packaging>jar</packaging>
+    <distributionManagement>
+        <repository>
+            <id>basistech.repo</id>
+            <name>Basis Local Repository</name>
+            <url>http://maven.basistech.net/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>basistech.snapshot.repo</id>
+            <name>Basistech Local Snapshot Repository</name>
+            <url>http://maven.basistech.net/nexus/content/repositories/snapshots/</url>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
 
     <scm>
         <connection>scm:svn:http://svn.basistech.net/engineering/maven-support/buildtools/trunk</connection>
