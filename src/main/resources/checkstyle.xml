@@ -28,7 +28,7 @@ Checkstyle rules for REX-2009.
         <module name="RedundantImport"/>
         <module name="UnusedImports"/>
         <module name="ImportOrder">
-            <property name="groups" value="java,javax,org.w3c,org.xml,org.junit,org.springframework,org,com"/>
+            <property name="groups" value="java,javax,org.w3c,org.xml,org.junit,org.springframework,org,com,gnu"/>
             <property name="ordered" value="true"/>
         </module>
         <!-- Checks for Size Violations.                    -->
