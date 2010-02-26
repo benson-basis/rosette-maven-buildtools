@@ -3,13 +3,13 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.basistech</groupId>
     <artifactId>buildtools</artifactId>
-    <version>2</version>
+    <version>2-SNAPSHOT</version>
     <name>Configuration files for checkstyle and PMD</name>
     <packaging>jar</packaging>
 
     <scm>
-        <connection>scm:svn:http://svn.basistech.net/engineering/maven-support/buildtools/tags/buildtools-2</connection>
-        <developerConnection>scm:svn:http://svn.basistech.net/engineering/maven-support/buildtools/tags/buildtools-2</developerConnection>
+        <connection>scm:svn:http://svn.basistech.net/engineering/maven-support/buildtools/trunk</connection>
+        <developerConnection>scm:svn:http://svn.basistech.net/engineering/maven-support/buildtools/trunk</developerConnection>
     </scm>
 
     <properties>
