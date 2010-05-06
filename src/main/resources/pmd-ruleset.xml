@@ -8,7 +8,6 @@
     <rule ref="rulesets/basic.xml/ForLoopShouldBeWhileLoop"/>
     <rule ref="rulesets/basic.xml/JumbledIncrementer"/>
     <rule ref="rulesets/basic.xml/ReturnFromFinallyBlock"/>
-    <rule ref="rulesets/basic.xml/UnconditionalIfStatement"/>
     <rule ref="rulesets/basic.xml/UnnecessaryConversionTemporary"/>
     <rule ref="rulesets/basic.xml/UnnecessaryFinalModifier"/>
     <rule ref="rulesets/basic.xml/UnnecessaryReturn"/>
