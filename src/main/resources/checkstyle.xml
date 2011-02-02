@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN" "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
 <!-- 
-Checkstyle rules for REX-2009.
+Checkstyle rules for Basis Technology.
 -->
 <module name="Checker">
     <module name="TreeWalker">
@@ -18,19 +18,10 @@ Checkstyle rules for REX-2009.
         <module name="ParameterName"/>
         <module name="StaticVariableName"/>
         <module name="TypeName"/>
-        <!-- Checks for imports                              -->
-        <!-- See http://checkstyle.sf.net/config_import.html -->
-        <module name="AvoidStarImport">
-            <property name="excludes" value="java.io,java.util,java.net,java.nio,java.nio.channels,java.lang.reflect,org.w3c.dom,org.xml.sax,java.awt,javax.swing,junit.framework"/>
-        </module>
         <module name="IllegalImport"/>
         <!-- defaults to sun.* packages -->
         <module name="RedundantImport"/>
         <module name="UnusedImports"/>
-        <module name="ImportOrder">
-            <property name="groups" value="java,javax,org.w3c,org.xml,org.junit,org.springframework,org,com,gnu"/>
-            <property name="ordered" value="true"/>
-        </module>
         <!-- Checks for Size Violations.                    -->
         <!-- See http://checkstyle.sf.net/config_sizes.html -->
         <module name="AnonInnerLength">
@@ -84,8 +75,7 @@ Checkstyle rules for REX-2009.
         <module name="EmptyStatement"/>
         <module name="EqualsHashCode"/>
         <module name="HiddenField">
-            <property name="ignoreConstructorParameter" value="true"/>
-            <property name="ignoreSetter" value="true"/>
+	    <property name="tokens" value="VARIABLE_DEF"/>
         </module>
         <module name="IllegalInstantiation"/>
         <module name="InnerAssignment"/>
@@ -99,21 +89,11 @@ Checkstyle rules for REX-2009.
         <module name="NestedTryDepth">
             <property name="max" value="3"/>
         </module>
-        <module name="SuperClone"/>
-        <module name="SuperFinalize"/>
         <module name="IllegalThrows">
             <property name="illegalClassNames" value="java.lang.Error,java.lang.RuntimeException"/>
         </module>
         <module name="PackageDeclaration"/>
         <module name="JUnitTestCase"/>
-        <module name="ReturnCount">
-            <property name="max" value="6"/>
-        </module>
-        <module name="IllegalType">
-            <property name="format" value="^xxx$"/>
-            <property name="illegalClassNames" value="java.util.GregorianCalendar, java.util.Hashtable, java.util.HashSet, java.util.HashMap, java.util.ArrayList, java.util.LinkedHashMap, java.util.LinkedHashSet, java.util.TreeSet, java.util.TreeMap"/>
-            <property name="tokens" value="VARIABLE_DEF"/>
-        </module>
         <module name="DeclarationOrder"/>
         <module name="ExplicitInitialization"/>
         <module name="DefaultComesLast"/>
