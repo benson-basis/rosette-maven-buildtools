@@ -71,8 +71,10 @@ Checkstyle rules for Basis Technology.
         <module name="NeedBraces"/>
         <module name="RightCurly"/>
         <module name="CovariantEquals"/>
+<!-- blows up with eclipse-cs 5.6.0
         <module name="DoubleCheckedLocking"/>
-        <module name="EmptyStatement"/>
+-->
+	<module name="EmptyStatement"/>	      
         <module name="EqualsHashCode"/>
         <module name="HiddenField">
 	    <property name="tokens" value="VARIABLE_DEF"/>
