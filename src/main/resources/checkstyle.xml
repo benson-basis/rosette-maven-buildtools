@@ -111,10 +111,10 @@ Checkstyle rules for Basis Technology.
         <module name="VisibilityModifier">
             <property name="protectedAllowed" value="true"/>
             <property name="packageAllowed" value="true"/>
-            <!-- this is needed for the resource injection unit tests.  It will removed 
-				when private member inject is supported.
-			-->
-            <property name="publicMemberPattern" value="resource[12].*"/>
+            <!-- Allow public members with 'Rule' on the end of their names to allow for 
+                 JUnit rules. Too bad we can't make this see the @nnotations.
+             -->
+            <property name="publicMemberPattern" value="^.*Rule$"/>
         </module>
         <!-- Metrics checks.                   -->
         <!-- See http://checkstyle.sf.net/config_metrics.html -->
