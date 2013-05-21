@@ -2,25 +2,25 @@
 <ruleset name="pmd">
     <description>PMD Plugin preferences rule set</description>
 
-    <rule ref="rulesets/basic.xml/BooleanInstantiation"/>
-    <rule ref="rulesets/basic.xml/DoubleCheckedLocking"/>
-    <rule ref="rulesets/basic.xml/EmptyStatementNotInLoop"/>
-    <rule ref="rulesets/basic.xml/ForLoopShouldBeWhileLoop"/>
-    <rule ref="rulesets/basic.xml/JumbledIncrementer"/>
-    <rule ref="rulesets/basic.xml/ReturnFromFinallyBlock"/>
-    <rule ref="rulesets/basic.xml/UnnecessaryConversionTemporary"/>
-    <rule ref="rulesets/basic.xml/UnnecessaryFinalModifier"/>
-    <rule ref="rulesets/basic.xml/UnnecessaryReturn"/>
-    <rule ref="rulesets/design.xml/AvoidProtectedFieldInFinalClass"/>
-    <rule ref="rulesets/design.xml/ConstructorCallsOverridableMethod"/>
-    <rule ref="rulesets/design.xml/IdempotentOperations"/>
-    <rule ref="rulesets/design.xml/OptimizableToArrayCall"/>
-    <rule ref="rulesets/design.xml/PositionLiteralsFirstInComparisons"/>
-    <rule ref="rulesets/design.xml/SimplifyBooleanExpressions"/>
-    <rule ref="rulesets/design.xml/SimplifyBooleanReturns"/>
-    <rule ref="rulesets/design.xml/UnnecessaryLocalBeforeReturn"/>
-    <rule ref="rulesets/logging-java.xml/LoggerIsNotStaticFinal"/>
-    <rule ref="rulesets/unusedcode.xml/UnusedLocalVariable"/>
-    <rule ref="rulesets/unusedcode.xml/UnusedPrivateField"/>
-    <rule ref="rulesets/unusedcode.xml/UnusedPrivateMethod"/>
+    <rule ref="rulesets/java/basic.xml/BooleanInstantiation"/>
+    <rule ref="rulesets/java/basic.xml/DoubleCheckedLocking"/>
+    <rule ref="rulesets/java/basic.xml/EmptyStatementNotInLoop"/>
+    <rule ref="rulesets/java/basic.xml/ForLoopShouldBeWhileLoop"/>
+    <rule ref="rulesets/java/basic.xml/JumbledIncrementer"/>
+    <rule ref="rulesets/java/basic.xml/ReturnFromFinallyBlock"/>
+    <rule ref="rulesets/java/basic.xml/UnnecessaryConversionTemporary"/>
+    <rule ref="rulesets/java/basic.xml/UnnecessaryFinalModifier"/>
+    <rule ref="rulesets/java/basic.xml/UnnecessaryReturn"/>
+    <rule ref="rulesets/java/design.xml/AvoidProtectedFieldInFinalClass"/>
+    <rule ref="rulesets/java/design.xml/ConstructorCallsOverridableMethod"/>
+    <rule ref="rulesets/java/design.xml/IdempotentOperations"/>
+    <rule ref="rulesets/java/design.xml/OptimizableToArrayCall"/>
+    <rule ref="rulesets/java/design.xml/PositionLiteralsFirstInComparisons"/>
+    <rule ref="rulesets/java/design.xml/SimplifyBooleanExpressions"/>
+    <rule ref="rulesets/java/design.xml/SimplifyBooleanReturns"/>
+    <rule ref="rulesets/java/design.xml/UnnecessaryLocalBeforeReturn"/>
+    <rule ref="rulesets/java/logging-java.xml/LoggerIsNotStaticFinal"/>
+    <rule ref="rulesets/java/unusedcode.xml/UnusedLocalVariable"/>
+    <rule ref="rulesets/java/unusedcode.xml/UnusedPrivateField"/>
+    <rule ref="rulesets/java/unusedcode.xml/UnusedPrivateMethod"/>
 </ruleset>
