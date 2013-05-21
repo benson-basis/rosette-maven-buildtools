@@ -4,11 +4,19 @@
     <groupId>com.basistech</groupId>
     <artifactId>buildtools</artifactId>
     <version>10-SNAPSHOT</version>
-    <parent>
-      <groupId>com.basistech</groupId>
-      <artifactId>basis-parent</artifactId>
-      <version>44-SNAPSHOT</version>
-    </parent>
+    <distributionManagement>
+        <repository>
+            <id>basistech.repo</id>
+            <name>Basis Local Repository</name>
+            <url>http://maven.basistech.net/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>basistech.snapshot.repo</id>
+            <name>Basistech Local Snapshot Repository</name>
+            <url>http://maven.basistech.net/nexus/content/repositories/snapshots/</url>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
     <name>buildtools: Configuration files for checkstyle and PMD</name>
     <scm>
         <connection>scm:git:git@github.com:basis-technology-corp/maven-buildtools.git</connection>
