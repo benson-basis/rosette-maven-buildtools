@@ -4,33 +4,20 @@
     <groupId>com.basistech</groupId>
     <artifactId>buildtools</artifactId>
     <version>10-SNAPSHOT</version>
-    <name>Configuration files for checkstyle and PMD</name>
-    <packaging>jar</packaging>
-    <distributionManagement>
-        <repository>
-            <id>basistech.repo</id>
-            <name>Basis Local Repository</name>
-            <url>http://maven.basistech.net/nexus/content/repositories/releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>basistech.snapshot.repo</id>
-            <name>Basistech Local Snapshot Repository</name>
-            <url>http://maven.basistech.net/nexus/content/repositories/snapshots/</url>
-            <uniqueVersion>false</uniqueVersion>
-        </snapshotRepository>
-    </distributionManagement>
-
+    <parent>
+      <groupId>com.basistech</groupId>
+      <artifactId>basis-parent</artifactId>
+      <version>44-SNAPSHOT</version>
+    </parent>
+    <name>buildtools: Configuration files for checkstyle and PMD</name>
     <scm>
-        <connection>scm:svn:http://svn.basistech.net/engineering/maven-support/buildtools/trunk</connection>
-        <developerConnection>scm:svn:http://svn.basistech.net/engineering/maven-support/buildtools/trunk</developerConnection>
+        <connection>scm:git:git@github.com:basis-technology-corp/maven-buildtools.git</connection>
+        <developerConnection>scm:git:git@github.com:basis-technology-corp/maven-buildtools.git</developerConnection>
     </scm>
-
     <properties>
         <maven.test.skip>true</maven.test.skip>
     </properties>
-
     <build>
       <defaultGoal>install</defaultGoal>
     </build>
-
 </project>
