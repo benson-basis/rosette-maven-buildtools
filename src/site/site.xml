@@ -1,0 +1,8 @@
+<project name="Maven Build Tools">
+  <publishDate position="right"/>
+  <version position="left"/>
+    <body>
+        <menu ref="modules" />
+        <menu ref="reports"/>
+    </body>
+</project>
