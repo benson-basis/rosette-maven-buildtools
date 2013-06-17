@@ -15,8 +15,12 @@
             <url>http://maven.basistech.net/nexus/content/repositories/snapshots/</url>
             <uniqueVersion>false</uniqueVersion>
         </snapshotRepository>
+        <site>
+            <id>${project.groupId}.${project.artifactId}.website</id>
+            <url>scp://souvenir.basistech.net:/basis/trees/maven-projects/maven-buildtools/${project.version}</url>
+        </site>
     </distributionManagement>
-    <name>buildtools: Configuration files for checkstyle and PMD</name>
+    <name>Buildtools: Configuration files for Checkstyle and PMD</name>
     <scm>
         <connection>scm:git:git@github.com:basis-technology-corp/maven-buildtools.git</connection>
         <developerConnection>scm:git:git@github.com:basis-technology-corp/maven-buildtools.git</developerConnection>
@@ -26,5 +30,65 @@
     </properties>
     <build>
       <defaultGoal>install</defaultGoal>
+      <plugins>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-site-plugin</artifactId>
+              <version>3.3</version>
+              <dependencies>
+                  <dependency><!-- add support for ssh/scp -->
+                      <groupId>org.apache.maven.wagon</groupId>
+                      <artifactId>wagon-ssh</artifactId>
+                      <version>2.4</version>
+                  </dependency>
+              </dependencies>
+          </plugin>
+          <plugin>
+              <artifactId>maven-antrun-plugin</artifactId>
+              <executions>
+                  <execution>
+                      <phase>pre-site</phase>
+                      <goals>
+                          <goal>run</goal>
+                      </goals>
+                      <configuration>
+                          <tasks>
+                              <mkdir dir="src/main/resources" />
+                              <copy file="src/main/resources/checkstyle.xml" todir="src/site/resources" />
+                          </tasks>
+                      </configuration>
+                  </execution>
+              </executions>
+          </plugin>
+          <plugin>
+              <artifactId>maven-clean-plugin</artifactId>
+              <version>2.5</version>
+              <configuration>
+                  <filesets>
+                      <fileset><!-- cleaning up our copy of checkstyle.xml from the plugin above -->
+                          <directory>src/site/resources</directory>
+                      </fileset>
+                  </filesets>
+              </configuration>
+          </plugin>
+      </plugins>
     </build>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>2.7</version>
+                <reportSets>
+                    <reportSet>
+                        <reports><!-- select reports -->
+                            <report>help</report>
+                            <report>index</report>
+                            <report>summary</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+        </plugins>
+    </reporting>
 </project>
