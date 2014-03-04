@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.basistech</groupId>
     <artifactId>buildtools</artifactId>
-    <version>12-SNAPSHOT</version>
+    <version>12</version>
     <distributionManagement>
         <repository>
             <id>basistech.repo</id>
@@ -69,6 +69,15 @@
                           <directory>src/site/resources</directory>
                       </fileset>
                   </filesets>
+              </configuration>
+          </plugin>
+          <plugin>
+              <groupId>com.atlassian.maven.plugins</groupId>
+              <artifactId>maven-jgitflow-plugin</artifactId>
+              <version>1.0-alpha26</version>
+              <configuration>
+                  <autoVersionSubmodules>true</autoVersionSubmodules>
+                  <pushReleases>true</pushReleases>
               </configuration>
           </plugin>
       </plugins>
