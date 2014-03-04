@@ -71,6 +71,15 @@
                   </filesets>
               </configuration>
           </plugin>
+          <plugin>
+              <groupId>com.atlassian.maven.plugins</groupId>
+              <artifactId>maven-jgitflow-plugin</artifactId>
+              <version>1.0-alpha26</version>
+              <configuration>
+                  <autoVersionSubmodules>true</autoVersionSubmodules>
+                  <pushReleases>true</pushReleases>
+              </configuration>
+          </plugin>
       </plugins>
     </build>
     <reporting>
