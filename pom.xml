@@ -2,24 +2,12 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.basistech</groupId>
     <artifactId>buildtools</artifactId>
-    <version>12</version>
-    <distributionManagement>
-        <repository>
-            <id>basistech.repo</id>
-            <name>Basis Local Repository</name>
-            <url>http://maven.basistech.net/nexus/content/repositories/releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>basistech.snapshot.repo</id>
-            <name>Basistech Local Snapshot Repository</name>
-            <url>http://maven.basistech.net/nexus/content/repositories/snapshots/</url>
-            <uniqueVersion>false</uniqueVersion>
-        </snapshotRepository>
-        <site>
-            <id>${project.groupId}.${project.artifactId}.website</id>
-            <url>scp://souvenir.basistech.net:/basis/trees/maven-projects/maven-buildtools/${project.version}</url>
-        </site>
-    </distributionManagement>
+    <parent>
+        <groupId>com.basistech</groupId>
+        <artifactId>textanalytics</artifactId>
+        <version>56.6.0</version>
+    </parent>
+    <version>13.0.0-SNAPSHOT</version>
     <name>Buildtools: Configuration files for Checkstyle and PMD</name>
     <scm>
         <connection>scm:git:git@github.com:basis-technology-corp/maven-buildtools.git</connection>
@@ -31,18 +19,6 @@
     <build>
       <defaultGoal>install</defaultGoal>
       <plugins>
-          <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-site-plugin</artifactId>
-              <version>3.3</version>
-              <dependencies>
-                  <dependency><!-- add support for ssh/scp -->
-                      <groupId>org.apache.maven.wagon</groupId>
-                      <artifactId>wagon-ssh</artifactId>
-                      <version>2.4</version>
-                  </dependency>
-              </dependencies>
-          </plugin>
           <plugin>
               <artifactId>maven-antrun-plugin</artifactId>
               <executions>
@@ -69,15 +45,6 @@
                           <directory>src/site/resources</directory>
                       </fileset>
                   </filesets>
-              </configuration>
-          </plugin>
-          <plugin>
-              <groupId>com.atlassian.maven.plugins</groupId>
-              <artifactId>maven-jgitflow-plugin</artifactId>
-              <version>1.0-alpha26</version>
-              <configuration>
-                  <autoVersionSubmodules>true</autoVersionSubmodules>
-                  <pushReleases>true</pushReleases>
               </configuration>
           </plugin>
       </plugins>
