@@ -7,12 +7,13 @@
         <artifactId>textanalytics</artifactId>
         <version>56.6.0</version>
     </parent>
-    <version>13.0.0-SNAPSHOT</version>
+    <version>13.0.0</version>
     <name>Buildtools: Configuration files for Checkstyle and PMD</name>
     <scm>
         <connection>scm:git:git@github.com:basis-technology-corp/maven-buildtools.git</connection>
         <developerConnection>scm:git:git@github.com:basis-technology-corp/maven-buildtools.git</developerConnection>
-    </scm>
+      <tag>buildtools-13.0.0</tag>
+  </scm>
     <properties>
         <maven.test.skip>true</maven.test.skip>
     </properties>
