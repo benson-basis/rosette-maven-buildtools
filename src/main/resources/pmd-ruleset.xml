@@ -4,13 +4,13 @@
 
     <rule ref="rulesets/java/basic.xml/BooleanInstantiation"/>
     <rule ref="rulesets/java/basic.xml/DoubleCheckedLocking"/>
-    <rule ref="rulesets/java/basic.xml/EmptyStatementNotInLoop"/>
+    <rule ref="rulesets/java/empty.xml/EmptyStatementNotInLoop"/>
     <rule ref="rulesets/java/basic.xml/ForLoopShouldBeWhileLoop"/>
     <rule ref="rulesets/java/basic.xml/JumbledIncrementer"/>
     <rule ref="rulesets/java/basic.xml/ReturnFromFinallyBlock"/>
-    <rule ref="rulesets/java/basic.xml/UnnecessaryConversionTemporary"/>
-    <rule ref="rulesets/java/basic.xml/UnnecessaryFinalModifier"/>
-    <rule ref="rulesets/java/basic.xml/UnnecessaryReturn"/>
+    <rule ref="rulesets/java/unnecessary.xml/UnnecessaryConversionTemporary"/>
+    <rule ref="rulesets/java/unnecessary.xml/UnnecessaryFinalModifier"/>
+    <rule ref="rulesets/java/unnecessary.xml/UnnecessaryReturn"/>
     <rule ref="rulesets/java/design.xml/AvoidProtectedFieldInFinalClass"/>
     <rule ref="rulesets/java/design.xml/ConstructorCallsOverridableMethod"/>
     <rule ref="rulesets/java/design.xml/IdempotentOperations"/>
