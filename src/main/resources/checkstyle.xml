@@ -96,7 +96,7 @@ Checkstyle rules for Basis Technology.
         </module>
         <module name="PackageDeclaration"/>
         <module name="IllegalImport">
-          <property name="illegalPkgs" value="sun, com.basistech.shaded.dm.com.google" />
+          <property name="illegalPkgs" value="sun, com.basistech.shaded.dm.com.google,junit.framework" />
         </module>
         <module name="DeclarationOrder"/>
         <module name="ExplicitInitialization"/>
