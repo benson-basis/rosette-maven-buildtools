@@ -137,7 +137,8 @@ Checkstyle rules for Basis Technology.
             <property name="maximumNumber" value="0"/>
         </module>
         <module name="Indentation">
-            <property name="caseIndent" value="0"/>
+          <property name="caseIndent" value="0"/>
+          <property name="throwsIndent" value="4"/>
         </module>
     </module>
     <!-- Header checks -->
