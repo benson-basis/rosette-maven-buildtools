@@ -26,8 +26,8 @@
     <version>14.1.1-SNAPSHOT</version>
     <name>Buildtools: Configuration files for Checkstyle and PMD</name>
     <scm>
-        <connection>scm:git:git@github.com:benson-basis/rosette-maven-buildtools.git</connection>
-        <developerConnection>scm:git:git@github.com:benson-basis/rosette-maven-buildtools.git</developerConnection>
+        <connection>scm:git:git@github.com:basis-technology-corp/rosette-maven-buildtools.git</connection>
+        <developerConnection>scm:git:git@github.com:basis-technology-corp/rosette-maven-buildtools.git</developerConnection>
       <tag>HEAD</tag>
   </scm>
     <properties>
