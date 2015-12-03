@@ -23,12 +23,12 @@
         <artifactId>open-source-parent</artifactId>
         <version>0.1.1</version>
     </parent>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>Buildtools: Configuration files for Checkstyle and PMD</name>
     <scm>
         <connection>scm:git:git@github.com:basis-technology-corp/rosette-maven-buildtools.git</connection>
         <developerConnection>scm:git:git@github.com:basis-technology-corp/rosette-maven-buildtools.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>open-source-buildtools-1.0.0</tag>
   </scm>
     <properties>
         <maven.test.skip>true</maven.test.skip>
