@@ -1,40 +1,41 @@
 <?xml version="1.0"?>
+<!--
+  ~ Copyright 2014 Basis Technology Corp.
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.basistech</groupId>
     <artifactId>buildtools</artifactId>
     <parent>
         <groupId>com.basistech</groupId>
-        <artifactId>textanalytics</artifactId>
-        <version>57.2.3</version>
+        <artifactId>open-source-parent</artifactId>
+        <version>0.1.1</version>
     </parent>
     <version>14.1.1-SNAPSHOT</version>
     <name>Buildtools: Configuration files for Checkstyle and PMD</name>
     <scm>
-        <connection>scm:git:git@git.basistech.net:textanalytics/maven-buildtools.git</connection>
-        <developerConnection>scm:git:git@git.basistech.net:textanalytics/maven-buildtools.git</developerConnection>
+        <connection>scm:git:git@github.com:benson-basis/rosette-maven-buildtools.git</connection>
+        <developerConnection>scm:git:git@github.com:benson-basis/rosette-maven-buildtools.git</developerConnection>
       <tag>HEAD</tag>
   </scm>
     <properties>
         <maven.test.skip>true</maven.test.skip>
-        <nexus-staging-plugin-version>1.6.5</nexus-staging-plugin-version>
     </properties>
     <build>
         <defaultGoal>install</defaultGoal>
         <plugins>
-            <plugin>
-                <!-- This plugin overrides deploy -->
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>${nexus-staging-plugin-version}</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <serverId>basistech.repo</serverId>
-                    <nexusUrl>http://nexus.basistech.net:8081/nexus/</nexusUrl>
-                    <!-- ID for text-analytics staging profile -->
-                    <stagingProfileId>1dd11ca8866422</stagingProfileId>
-                </configuration>
-            </plugin>
             <plugin>
                 <artifactId>maven-antrun-plugin</artifactId>
                 <executions>
