@@ -158,9 +158,10 @@ Checkstyle rules for Basis Technology.
     </module>
     <!-- Header checks -->
     <module name="RegexpHeader">
-         <property name="header" value="^\W*$\n^\W*This data and information is proprietary to, and a valuable trade secret\n^\W*of, Basis Technology Corp\.  It is given in confidence by Basis Technology\n^\W*and may only be used as permitted under the license agreement under which\n^\W*it has been distributed, and in no other way\.\n^\W*$\n^\W*Copyright \(c\) (20..|20..-....) Basis Technology Corporation All rights reserved\.\n^\W*$\n^\W*The technical data and information provided herein are provided with\n^\W*`limited rights', and the computer software provided herein is provided\n^\W*with `restricted rights' as those terms are defined in DAR and ASPR\n^\W*7-104\.9\(a\).\n"/>
-         <property name="fileExtensions" value="java"/>
-      </module>
+      <property name="header"
+                value='/\*\n\* Copyright 20.. Basis Technology Corp\.\n\*\n\* Licensed under the Apache License, Version 2\.0 \(the "License"\);\n' />
+      <property name="fileExtensions" value="java"/>
+    </module>
     <module name="SuppressionCommentFilter"/>
     <module name="FileTabCharacter">
       <property name="eachLine" value="true"/>

@@ -17,13 +17,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.basistech</groupId>
-    <artifactId>buildtools</artifactId>
+    <artifactId>open-source-buildtools</artifactId>
     <parent>
         <groupId>com.basistech</groupId>
         <artifactId>open-source-parent</artifactId>
         <version>0.1.1</version>
     </parent>
-    <version>14.1.2-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>Buildtools: Configuration files for Checkstyle and PMD</name>
     <scm>
         <connection>scm:git:git@github.com:basis-technology-corp/rosette-maven-buildtools.git</connection>
