@@ -2,11 +2,6 @@ Introduction
 
         This is a project that defines company-wide checkstyle and PMD rules. 
 
-        Normally, these rules are made available to applications through a
-        dependency on the basis-parent project.  This site package has been
-        put together so that the checkstyle.xml file is available via a URL.
-        Having the file available via a URL allows developers to configure 
-        their IDEs to fetch these rules from a URL.
+        These rules are made available to applications through a
+        dependency on the basis-parent project.
 
-        Point your IDE to:
-        http://maven-projects.basistech.net/maven-buildtools/${project.version}/checkstyle.xml
