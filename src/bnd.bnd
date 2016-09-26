@@ -1,0 +1,4 @@
+-consumer-policy: ${range;[===,+)}
+Bundle-Version: ${osgi-version}
+-dsannotations: *
+-dsannotations-options: inherit

@@ -24,12 +24,12 @@
         <version>0.1.1</version>
     </parent>
     <version>1.0.1-SNAPSHOT</version>
-    <name>Buildtools: Configuration files for Checkstyle and PMD</name>
+    <name>Buildtools: Configuration files for Checkstyle,  PMD, and bnd.</name>
     <scm>
         <connection>scm:git:git@github.com:basis-technology-corp/rosette-maven-buildtools.git</connection>
         <developerConnection>scm:git:git@github.com:basis-technology-corp/rosette-maven-buildtools.git</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
     <properties>
         <maven.test.skip>true</maven.test.skip>
     </properties>
@@ -46,9 +46,31 @@
                         </goals>
                         <configuration>
                             <tasks>
-                                <mkdir dir="src/main/resources" />
-                                <copy file="src/main/resources/checkstyle.xml" todir="src/site/resources" />
+                                <mkdir dir="src/main/resources"/>
+                                <copy file="src/main/resources/checkstyle.xml" todir="src/site/resources"/>
                             </tasks>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.12</version>
+                <executions>
+                    <execution>
+                        <id>attach-artifacts</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>attach-artifact</goal>
+                        </goals>
+                        <configuration>
+                            <artifacts>
+                                <artifact>
+                                    <file>src/bnd.bnd</file>
+                                    <type>bnd</type>
+                                </artifact>
+                            </artifacts>
                         </configuration>
                     </execution>
                 </executions>
