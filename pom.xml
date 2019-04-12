@@ -23,12 +23,12 @@
         <artifactId>open-source-parent</artifactId>
         <version>3.0.0</version>
     </parent>
-    <version>2.0.0-SNAPSHOT</version>
+    <version>2.0.0</version>
     <name>Buildtools: Configuration files for Checkstyle,  PMD, and bnd.</name>
     <scm>
         <connection>scm:git:git@github.com:basis-technology-corp/rosette-maven-buildtools.git</connection>
         <developerConnection>scm:git:git@github.com:basis-technology-corp/rosette-maven-buildtools.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>open-source-buildtools-2.0.0</tag>
     </scm>
     <properties>
         <maven.test.skip>true</maven.test.skip>
@@ -46,8 +46,8 @@
                         </goals>
                         <configuration>
                             <tasks>
-                                <mkdir dir="src/main/resources"/>
-                                <copy file="src/main/resources/checkstyle.xml" todir="src/site/resources"/>
+                                <mkdir dir="src/main/resources" />
+                                <copy file="src/main/resources/checkstyle.xml" todir="src/site/resources" />
                             </tasks>
                         </configuration>
                     </execution>
