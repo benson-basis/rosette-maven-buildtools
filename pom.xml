@@ -23,7 +23,7 @@
         <artifactId>open-source-parent</artifactId>
         <version>3.0.0</version>
     </parent>
-    <version>2.0.1-SNAPSHOT</version>
+    <version>3.0.0-SNAPSHOT</version>
     <name>Buildtools: Configuration files for Checkstyle,  PMD, and bnd.</name>
     <scm>
         <connection>scm:git:git@github.com:basis-technology-corp/rosette-maven-buildtools.git</connection>
