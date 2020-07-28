@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright 2019 Basis Technology Corp.
+  ~ Copyright 2020 Basis Technology Corp.
   ~
   ~    Licensed under the Apache License, Version 2.0 (the "License");
   ~    you may not use this file except in compliance with the License.
@@ -17,25 +17,25 @@
 <ruleset name="pmd">
     <description>PMD Plugin preferences rule set</description>
 
-    <rule ref="category/java/bestpractices.xml/PositionLiteralsFirstInComparisons"/>
-    <rule ref="category/java/bestpractices.xml/UnusedLocalVariable"/>
-    <rule ref="category/java/bestpractices.xml/UnusedPrivateField"/>
-    <rule ref="category/java/bestpractices.xml/UnusedPrivateMethod"/>
-    <rule ref="category/java/codestyle.xml/AvoidProtectedFieldInFinalClass"/>
-    <rule ref="category/java/codestyle.xml/ForLoopShouldBeWhileLoop"/>
-    <rule ref="category/java/codestyle.xml/UnnecessaryLocalBeforeReturn"/>
-    <rule ref="category/java/codestyle.xml/UnnecessaryModifier"/>
-    <rule ref="category/java/codestyle.xml/UnnecessaryReturn"/>
-    <rule ref="category/java/design.xml/SimplifyBooleanExpressions"/>
-    <rule ref="category/java/design.xml/SimplifyBooleanReturns"/>
-    <rule ref="category/java/errorprone.xml/ConstructorCallsOverridableMethod"/>
-    <rule ref="category/java/errorprone.xml/EmptyStatementNotInLoop"/>
-    <rule ref="category/java/errorprone.xml/IdempotentOperations"/>
-    <rule ref="category/java/errorprone.xml/JumbledIncrementer"/>
-    <rule ref="category/java/errorprone.xml/LoggerIsNotStaticFinal"/>
-    <rule ref="category/java/errorprone.xml/ReturnFromFinallyBlock"/>
-    <rule ref="category/java/errorprone.xml/UnnecessaryConversionTemporary"/>
-    <rule ref="category/java/multithreading.xml/DoubleCheckedLocking"/>
-    <rule ref="category/java/performance.xml/BooleanInstantiation"/>
-    <rule ref="category/java/performance.xml/OptimizableToArrayCall"/>
+    <rule ref="category/java/bestpractices.xml/PositionLiteralsFirstInComparisons" />
+    <rule ref="category/java/bestpractices.xml/UnusedLocalVariable" />
+    <rule ref="category/java/bestpractices.xml/UnusedPrivateField" />
+    <rule ref="category/java/bestpractices.xml/UnusedPrivateMethod" />
+    <rule ref="category/java/codestyle.xml/AvoidProtectedFieldInFinalClass" />
+    <rule ref="category/java/codestyle.xml/ForLoopShouldBeWhileLoop" />
+    <rule ref="category/java/codestyle.xml/UnnecessaryLocalBeforeReturn" />
+    <rule ref="category/java/codestyle.xml/UnnecessaryModifier" />
+    <rule ref="category/java/codestyle.xml/UnnecessaryReturn" />
+    <rule ref="category/java/design.xml/SimplifyBooleanExpressions" />
+    <rule ref="category/java/design.xml/SimplifyBooleanReturns" />
+    <rule ref="category/java/errorprone.xml/ConstructorCallsOverridableMethod" />
+    <rule ref="category/java/errorprone.xml/EmptyStatementNotInLoop" />
+    <rule ref="category/java/errorprone.xml/IdempotentOperations" />
+    <rule ref="category/java/errorprone.xml/JumbledIncrementer" />
+    <rule ref="category/java/errorprone.xml/ProperLogger" />
+    <rule ref="category/java/errorprone.xml/ReturnFromFinallyBlock" />
+    <rule ref="category/java/errorprone.xml/UnnecessaryConversionTemporary" />
+    <rule ref="category/java/multithreading.xml/DoubleCheckedLocking" />
+    <rule ref="category/java/performance.xml/BooleanInstantiation" />
+    <rule ref="category/java/performance.xml/OptimizableToArrayCall" />
 </ruleset>

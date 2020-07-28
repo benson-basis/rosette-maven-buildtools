@@ -1,3 +1,5 @@
 target
 src/site/resources/checkstyle.xml
 *~
+*.iml
+.idea/
