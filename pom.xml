@@ -19,7 +19,7 @@
 
     <groupId>com.basistech</groupId>
     <artifactId>open-source-buildtools</artifactId>
-    <version>3.0.1-SNAPSHOT</version>
+    <version>4.0.0</version>
 
     <name>Basis Technology Open Source Buildtools</name>
     <description>Configuration files for Checkstyle,  PMD, and bnd.</description>
@@ -50,7 +50,7 @@
     <scm>
         <connection>scm:git:git@github.com:basis-technology-corp/rosette-maven-buildtools.git</connection>
         <developerConnection>scm:git:git@github.com:basis-technology-corp/rosette-maven-buildtools.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>open-source-buildtools-4.0.0</tag>
     </scm>
 
 
