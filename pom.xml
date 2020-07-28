@@ -18,7 +18,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.basistech</groupId>
     <artifactId>open-source-buildtools</artifactId>
-    <version>4.0.1-SNAPSHOT</version>
+    <version>3.0.1-SNAPSHOT</version>
     <name>Buildtools: Configuration files for Checkstyle,  PMD, and bnd.</name>
     <scm>
         <connection>scm:git:git@github.com:basis-technology-corp/rosette-maven-buildtools.git</connection>
