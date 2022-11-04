@@ -7,7 +7,9 @@ and maven-pmd-plugin.
 
 ```
 mvn release:prepare
-mvn release:perform
+mvn releaes:perform
+  --OR--
+mvn release:perform -Darguments=-Dgpg.passphrase=MY_PASSPHRASE
 ```
 
 Login to https://s01.oss.sonatype.org/ and release from staging.
