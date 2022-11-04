@@ -5,5 +5,9 @@ can be reused in multiple projects using the maven-checkstyle-plugin
 and maven-pmd-plugin.
 
 
+```
+mvn release:prepare
+mvn release:perform
+```
 
-
+Login to https://s01.oss.sonatype.org/ and release from staging.
