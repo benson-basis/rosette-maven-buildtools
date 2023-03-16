@@ -1,8 +1,9 @@
 # Release Notes
 
-## 6.0.0 - 20230315
+## 6.0.0 - 20230316
 - Add `pluginManagement` section to stop pulling in old plugin versions in downstream projects.
-
+- PMD:  Replace `BooleanInstantiation` with `PrimitiveWrapperInstantiation`.
+- PMD:  Replace `EmptyStatementNotInLoop` with `UnnecessarySemicolon`.
 
 ## 5.0.0 - 20221104
 - PMD:  Replace `PositionLiteralsFirstInComparisons` with `LiteralsFirstInComparisons`
