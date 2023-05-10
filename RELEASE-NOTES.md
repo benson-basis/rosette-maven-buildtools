@@ -1,5 +1,8 @@
 # Release Notes
 
+## 7.0.0 - 20230510
+- Add `site` and `clean` lifecycle defaults to `pluginManagement`
+
 ## 6.0.0 - 20230316
 - Add `pluginManagement` section to stop pulling in old plugin versions in downstream projects.
 - PMD:  Replace `BooleanInstantiation` with `PrimitiveWrapperInstantiation`.
