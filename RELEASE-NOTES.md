@@ -1,5 +1,8 @@
 # Release Notes
 
+## 7.0.1
+- Permit references to Babel Street in header
+
 ## 7.0.0 - 20230510
 - Add `site` and `clean` lifecycle defaults to `pluginManagement`
 

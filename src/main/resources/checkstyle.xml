@@ -158,7 +158,7 @@ Checkstyle rules for Basis Technology.
     <!-- Header checks -->
     <module name="RegexpHeader">
       <property name="header"
-                value='/\*\n\* Copyright 20.. Basis Technology Corp\.\n\*\n\* Licensed under the Apache License, Version 2\.0 \(the "License"\);\n' />
+                value='/\*\n\* Copyright 20.. (Basis Technology Corp\.|Babel Street Rosette Ltd\.)\n\*\n\* Licensed under the Apache License, Version 2\.0 \(the "License"\);\n' />
       <property name="fileExtensions" value="java"/>
     </module>
     <module name="FileTabCharacter">
